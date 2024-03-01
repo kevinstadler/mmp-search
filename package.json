@@ -1,11 +1,12 @@
 {
-  "name": "vite-react-typescript-starter",
+  "name": "mmp-search",
   "private": true,
+  "homepage": "https://kevinstadler.github.io/mmp-search",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --base=./",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
