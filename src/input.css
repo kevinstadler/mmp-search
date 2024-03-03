@@ -1,0 +1,84 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+a {
+  @apply text-blue-700;
+
+  &:hover {
+    @apply underline;
+  }
+}
+
+input {
+  @apply shadow appearance-none border rounded m-2 py-2 px-3 text-gray-700 leading-tight;
+
+  &[type='text'] {
+    @apply w-40 mb-2 text-sm font-medium text-gray-900;
+  }
+}
+
+select {
+  @apply shadow border rounded m-2 px-2 py-1;
+}
+
+button[type='submit'] {
+  @apply bg-blue-500 hover:bg-blue-700 text-white px-3 py-1 rounded;
+}
+
+tr {
+  @apply odd:bg-white even:bg-slate-100;
+}
+
+thead th {
+  @apply bg-slate-200 uppercase text-xs py-2;
+}
+
+td {
+  @apply px-2 py-1 align-top;
+}
+
+.no-data {
+  @apply font-medium text-center;
+}
+
+.stellen-table {
+  @apply w-full table-fixed border-separate p-2 border border-slate-500;
+}
+
+.fetching {
+  @apply text-center bg-slate-400 text-white animate-pulse;
+}
+
+.search-interface {
+  @apply text-center py-4;
+}
+
+.result-count {
+  @apply text-right;
+}
+
+.pagination {
+  @apply text-center;
+  li {
+    display: inline;
+
+    &.selected {
+      @apply py-1 rounded bg-blue-500;
+    }
+
+    > a {
+      @apply px-2 py-1 rounded;
+
+      &:hover {
+        @apply bg-blue-200;
+      }
+    }
+  }
+}
